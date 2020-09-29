@@ -1,0 +1,307 @@
+/* Inicio Parte 1 */
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Krona One", sans-serif;
+}
+.logo {
+  height: 54px;
+}
+header {
+  background: url("../img/background.jpg");
+  position: relative;
+  height: 80vh;
+  background-size: cover;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.contenedor {
+  width: 90%;
+  max-width: 1280px;
+  margin: auto;
+}
+header .menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+header .logo_menu {
+  display: flex;
+  align-items: center;
+}
+.hamburguesa{
+    display: none;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  display: flex;
+  margin: 0 20px;
+}
+nav ul li a {
+  color: #ffffff;
+  display: block;
+}
+header .boton a,
+.botones a,
+#discografia a {
+  background: #f7a738;
+  color: #333333;
+  padding: 15px 20px;
+  line-height: 50px;
+}
+header .titular {
+  margin-top: 20vh;
+  color: #ffffff;
+}
+h1 {
+  width: 60%;
+  font-size: 40px;
+}
+.botones {
+  padding-top: 40px;
+}
+.tour {
+  background: #ffffff !important;
+}
+/*Fin Parte 1 */
+
+/* Inicio Parte 2 */
+#discografia {
+  background: #181818;
+  color: #ffffff;
+  padding: 60px 0;
+}
+h4 {
+  margin: 0;
+  color: #f7a738;
+  border: solid 1px #cccccc;
+  width: 130px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#discografia .contenedor {
+  display: flex;
+  align-items: center;
+}
+#discografia span {
+  color: #f7a738;
+  text-decoration: underline;
+}
+#discografia h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+#discografia h2 {
+  padding-top: 20px;
+}
+#discografia p {
+  font-size: 11px;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+#discografia img {
+  width: 100%;
+}
+#discografia .texto {
+  width: 50%;
+  margin: auto;
+}
+#discografia .imagen {
+  width: 30%;
+}
+/* Fin Parte 2 */
+
+/* Inicio Parte 3*/
+.contenedor-textos {
+  display: flex;
+}
+#about {
+  padding: 140px 0;
+}
+#about h4 {
+  color: #333333;
+  border: 1px solid #333333;
+  text-align: center;
+}
+#about p,
+#tour p,
+footer p {
+  font-family: "Quicksand", sans-serif;
+}
+.negro {
+  background: #aaaaaa !important;
+}
+/* Fin Parte 3 */
+
+/* Inicio Parte 4*/
+#tour{
+  background: #f7a738;
+  padding: 60px 0;
+}
+#tour .contenedor{
+  display: flex;
+  justify-content: space-around;
+}
+#tour img{
+  width: 100%;
+}
+#tour .imagen{
+  width: 33%;
+  position: relative;
+  margin-top: -140px;
+}
+#tour .texto{
+  width: 50%;
+}
+#tour h4{
+  color: #333333;
+  text-align: center;
+}
+.fechas{
+  width: 70%;
+  margin: auto;
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333333;
+}
+.fechas .numero{
+  font-size: 35px;
+}
+.fechas h5, .fechas p{
+  margin: 0;
+}
+.fechas h5{
+  font-size: 20px;
+}
+.fechas a {
+  background: #ffffff;
+  color: #333333;
+  padding: 15px 50px;
+}
+/* Fin Parte 4 */
+
+/* Inicio Parte 5*/
+footer{
+  padding: 60px 0;
+  text-align: center; 
+}
+footer svg{
+  margin: 0px 5px;
+  background: #333333;
+  color: #f3f3f3;
+  padding: 10px;
+  border-radius: 50%;
+  width: 20px !important;
+  height: 20px !important;
+}
+footer p{
+  width: 20%;
+  margin: auto;
+  font-size: 15px;
+}
+/* Fin Parte 5 */
+
+/* RESPONSIVE */
+
+@media (max-width: 800px){
+  /* Header */
+  header .menu{
+    /* */
+    flex-direction: column;
+  }
+  header .menu .logo_menu .hamburguesa{
+    height: 30px;
+    display: block;
+  }
+  header .logo_menu{
+    justify-content: space-between;
+  }
+  nav ul{
+    flex-direction: column;
+  }
+  nav {
+    background: #f7a738;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    display: none;
+  }
+  nav ul li a{
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  .boton{
+    display: none;
+  }
+  h1{
+    width: auto;
+    text-align: center;
+    font-size: 26px;
+  }
+  header .titular{
+    margin-top: 15vh;
+  }
+
+  /*DISCOGRAPHY*/
+
+  h2{
+    font-size: 25px !important;
+  }
+  #discografia .contenedor{
+    flex-direction: column;
+  }
+  #discografia .texto{
+    width: 100%;
+  }
+  #discografia .imagen{
+    width: 80%;
+    padding-top: 30px;
+  }
+  #about{
+    padding-top: 30px;
+  }
+  .contenedor-textos{
+    flex-direction: column;
+  }
+  .botones{
+    padding-top: 15px;
+  }
+
+  /* TOUR */
+
+  #tour {
+    padding: 25px 0;
+  }
+
+  #tour .contenedor{
+    display: block;
+  }
+  #tour .imagen{
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+  }
+  #tour .texto{
+    width: 100%;
+    padding-top: 20px;
+  }
+  .fechas{
+    text-align: center;
+    width: 100%;
+    padding-top: 20px;
+    display: block;
+  }
+  footer p{
+    width: 100%;
+  }
+
+}
